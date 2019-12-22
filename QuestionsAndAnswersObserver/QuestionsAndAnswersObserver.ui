@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QuestionsAndAnswersObserverClass</class>
+ <widget class="QMainWindow" name="QuestionsAndAnswersObserverClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QuestionsAndAnswersObserver</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="searchLineEdit"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="addLineEdit"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QPushButton" name="addButton">
+      <property name="text">
+       <string>ADD</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QListWidget" name="questionsList"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QListWidget" name="answerList"/>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QListWidget" name="searchList"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="searchButton">
+      <property name="text">
+       <string>SEARCH</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="addAnsLineEdit"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="addAnsButton">
+      <property name="text">
+       <string>ADD ANSWER</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="QuestionsAndAnswersObserver.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Lab11Class</class>
+ <widget class="QMainWindow" name="Lab11Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lab11</string>
+  </property>
+  <widget class="QWidget" name="mainLayout">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="adminTab">
+       <attribute name="title">
+        <string>Admin</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout"/>
+        </item>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="mainAdminLayout">
+          <item>
+           <layout class="QHBoxLayout" name="dataLayout">
+            <item>
+             <layout class="QVBoxLayout" name="evidenceLayout">
+              <item>
+               <widget class="QLabel" name="evidenceLabel">
+                <property name="text">
+                 <string>Evidence Database</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QListWidget" name="evidenceData"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QGridLayout" name="inputDataLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="IDLabel">
+                <property name="text">
+                 <string>ID</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="IDEdit"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="measurementLabel">
+                <property name="text">
+                 <string>Measurement</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="measurementEdit"/>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="imageClarityLabel">
+                <property name="text">
+                 <string>Image Clarity Level</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="imageClarityEdit"/>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="quantityLabel">
+                <property name="text">
+                 <string>Quantity</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="quantityedit"/>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="photographLabel">
+                <property name="text">
+                 <string>Photograph</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="photographEdit"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="buttonsLayout">
+            <item>
+             <widget class="QPushButton" name="addButton">
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="updateButton">
+              <property name="text">
+               <string>Update</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="deleteButton">
+              <property name="text">
+               <string>Delete</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="redoButton">
+          <property name="text">
+           <string>REDO</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="undoButton">
+          <property name="text">
+           <string>UNDO</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userTab">
+       <attribute name="title">
+        <string>User</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" rowspan="3">
+         <layout class="QVBoxLayout" name="CurrentEvidenceLayout">
+          <item>
+           <widget class="QLabel" name="currentEvidenceLabel">
+            <property name="text">
+             <string>Current Evidence</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="currentEvidence"/>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="0">
+         <layout class="QVBoxLayout" name="UserDataLayout">
+          <item>
+           <widget class="QLabel" name="UserDataLabel">
+            <property name="text">
+             <string>User DataBase</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="userDataBase"/>
+          </item>
+         </layout>
+        </item>
+        <item row="2" column="1">
+         <layout class="QVBoxLayout" name="userButtonsLayout">
+          <item>
+           <widget class="QPushButton" name="showButton">
+            <property name="text">
+             <string>Show DataBase</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextButton">
+            <property name="text">
+             <string>NEXT</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="1">
+         <layout class="QGridLayout" name="filterDataLyout">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="filterQuantity">
+            <item>
+             <widget class="QLabel" name="filterQuantityLabel">
+              <property name="text">
+               <string>Quantity</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="filterQuantityEdit"/>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="filterButton">
+            <property name="text">
+             <string>Filter</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="filterMeasurement">
+            <item>
+             <widget class="QLabel" name="filterMeasurementLabel">
+              <property name="text">
+               <string>Measurement</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="filterMeasurementEdit"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="4" column="0">
+         <layout class="QVBoxLayout" name="FilterLayout">
+          <item>
+           <widget class="QLabel" name="filterLabel">
+            <property name="text">
+             <string>Filtered List</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="filterList"/>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="1">
+         <layout class="QHBoxLayout" name="saveLayout">
+          <item>
+           <widget class="QLabel" name="IDuserLabel">
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="IDuserEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="saveButton">
+            <property name="text">
+             <string>SAVE</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="mylistButton">
+          <property name="text">
+           <string>MyList</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionDetails">
+   <property name="text">
+    <string>Details</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Lab11.qrc"/>
+ </resources>
+ <connections/>
+</ui>

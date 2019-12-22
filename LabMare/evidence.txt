@@ -1,0 +1,7 @@
+12ER8, 7x5x678,12,5, DSC345.jpg
+4F, 9x9x2,1,34, DSC843.jpg
+1WX9, 6x54x12,3,3, DSC90.jpg
+9U, 7x7x3,9,1, DSC45.jpg
+1r,3,5,6,7
+9pol,9x9450x76,2.3,4,DSC34.jpg
+T76U, 5x5x6,0.7,89, DSC856.jpg
